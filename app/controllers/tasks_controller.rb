@@ -1,10 +1,10 @@
 class TasksController < ApplicationController
 
   def index
-    @tasks = Tasks.all
+    @tasks = Task.all
   end
 
   def show
-    @tasks = Tasks.find(params[:id])
+    @tasks = Task.find(params[:id])
   end
 end
