@@ -1,12 +1,14 @@
 <h1>My Tasks</h1>
 
 <form action="#index">
+
   <ul class="form-inline" style="list-style: none">
-     <%@tasks.each do |task| %>
+    <%@tasks.each do |task| %>
     <li>
       <input type="checkbox" name="<%= task.completed %>">
-      <label for="title" name="<%= task.title %>">Laundry</label>
+      <label for="title" name="title"><%= task.title %></label>
     </li>
-    <% end %>
+     <% end %>
   </ul>
+
 </form>
