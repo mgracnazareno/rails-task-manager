@@ -1,8 +1,10 @@
-<h2>My Tasks</h2>
 
-<form action="#">
+<form action="">
+  <h1><%= @task.title %></h1>
+  <p><%= @task.details %></p>
 
-
+  <input type="checkbox" name="<%= @task.completed %>">
+  <label for="">This task is completed</label>
 </form>
 
-<% link_to "Back to List", index_path %>
+<%= link_to "Back to list", tasks_path %>

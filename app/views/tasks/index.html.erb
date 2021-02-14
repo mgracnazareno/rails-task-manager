@@ -5,8 +5,8 @@
   <ul class="form-inline" style="list-style: none">
     <%@tasks.each do |task| %>
     <li>
-      <input type="checkbox" name="<%= task.completed %>">
-      <label for="title" name="title"><%= task.title %></label>
+      <input type="checkbox" name="<%= task.completed %>" value=">
+      <label for="title" name="title"><%= link_to task.title, tasks_path %></label>
     </li>
      <% end %>
   </ul>
